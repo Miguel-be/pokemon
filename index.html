@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="styles/pokeapi.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+      <div class="container">
+        <h1>Pokedex</h1>
+        <div class="options">
+          <div>
+            <select class="form-input" name="cboselectweight" id="cboselectweight">
+              <option value="ordena" selected>Filtrar por peso</option>
+              <option value="gordos">Más de 200</option>
+              <option value="flacos">Menos de 200</option>
+            </select>
+          </div>
+          <div>
+            <input class="form-input"
+              type="text"
+              name="txtselecciona"
+              id="txtselecciona"
+              placeholder="Introduce el nombre de un pokemon"
+            />
+          </div>
+          <div>
+            <select class="form-input" name="cboselectheight" id="cboselectheight">
+              <option value="ordena" selected>Filtrar por altura</option>
+              <option value="altos">Más de 15</option>
+              <option value="bajos">Menos de 15</option>
+            </select>
+          </div>
+          <div>
+            <select class="form-input" name="cboselectypes" id="cboselectypes">
+              <option value="selecciona" selected>Selecciona un tipo</option>
+            </select>
+          </div>
+        </div>
+        <div class="panel">
+          <div id="pokedex"></div>
+          <div id="result"> 
+            <div id="result-pokemon">              
+            </div> 
+          </div>
+        </div>
+      </div>
+    <script src="js/main.js" type="module"></script>
+  </body>
+</html>
